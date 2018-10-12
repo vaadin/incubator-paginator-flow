@@ -5,14 +5,14 @@
 
     <parent>
         <groupId>com.vaadin</groupId>
-        <artifactId>incubator-password-strength-flow-root</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <artifactId>incubator-paginator-flow-root</artifactId>
+        <version>1.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>incubator-password-strength-flow</artifactId>
+    <artifactId>incubator-paginator-flow</artifactId>
     <packaging>jar</packaging>
 
-    <name>Incubator password strength for Vaadin 10</name>
+    <name>Incubator paginator for Vaadin 10</name>
 
     <properties>
         <jetty.plugin.version>9.3.9.v20160517</jetty.plugin.version>
@@ -41,8 +41,8 @@
 
         <dependency>
             <groupId>com.vaadin.webjar</groupId>
-            <artifactId>incubator-password-strength</artifactId>
-            <version>1.0.2</version>
+            <artifactId>incubator-paginator</artifactId>
+            <version>1.0.1</version>
         </dependency>
 
         <dependency>
@@ -101,12 +101,6 @@
                     <failOnNotUptodateHeader>true</failOnNotUptodateHeader>
                 </configuration>
                 <executions>
-                    <execution>
-                        <goals>
-                            <goal>check-file-header</goal>
-                        </goals>
-                        <phase>process-sources</phase>
-                    </execution>
                 </executions>
             </plugin>
             <plugin>
@@ -128,8 +122,8 @@
 
                             <!-- Add-on specific fields to update -->
                             <AdVaaLicen>cval</AdVaaLicen>
-                            <AdVaaName>incubator-password-strength</AdVaaName>
-                            <AdVaaPkg>com.vaadin.incubator.password.strength</AdVaaPkg>
+                            <AdVaaName>incubator-paginator</AdVaaName>
+                            <AdVaaPkg>com.vaadin.incubator.paginator</AdVaaPkg>
                             <!-- Implementation-Title and Implementation-Version 
                                 come from the POM by default -->
                             <Implementation-Title>Vaadin Crud</Implementation-Title>
