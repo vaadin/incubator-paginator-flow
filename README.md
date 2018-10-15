@@ -2,6 +2,12 @@
 
 Incubator Paginator for Flow is a UI component add-on for Vaadin 10.
 
+[Live Demo ↗](https://incubator.app.fi/incubator-breadcrumb-demo)
+
+[<img src="https://raw.githubusercontent.com/vaadin/incubator-paginator/master/screenshot.png" width="200" alt="Screenshot of incubator-paginator">](https://vaadin.com/directory/component/vaadinincubator-paginator)
+
+[<img src="https://raw.githubusercontent.com/vaadin/incubator-paginator-flow/master/example.png" width="400" alt="Screenshot of incubator-paginator">](https://vaadin.com/directory/component/vaadinincubator-paginator)
+
 # What does the component do?
 
 Paginator is a Web Component providing an easy way to display a full functioning paginator on a webpage.
@@ -9,7 +15,7 @@ Paginator is a Web Component providing an easy way to display a full functioning
 # How is it used?
 
 A simple use of the paginator component would be the following.
-```
+```java
 // 10 pages, current page 1
 Paginator paginator = new Paginator(10, 1, "beginning", "end");
 
@@ -22,7 +28,7 @@ paginator.addChangeSelectedPageListener(event -> {
 The content of the grid can be displayed in a paginated way using the paginator.
 This requires some basic configuration of the grid and the paginator.
 
-```
+```java
 Grid<Person> grid = new Grid<>();
 
 grid.addColumn(Person::firstName);
