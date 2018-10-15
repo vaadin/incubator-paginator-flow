@@ -43,6 +43,7 @@ public class Paginator extends PolymerTemplate<Paginator.PaginatorModel> impleme
      * Default constructor. Creates a Paginator.
      */
     public Paginator() {
+        setNumberOfPages(1);
     }
 
     /**
@@ -61,11 +62,11 @@ public class Paginator extends PolymerTemplate<Paginator.PaginatorModel> impleme
      *
      * @param pagesNumber number of pages
      * @param currentPage current page
-     * @see #setPagesNumber(int)
+     * @see #setNumberOfPages(int)
      * @see #setCurrentPage(int)
      */
     public Paginator(int pagesNumber, int currentPage) {
-        setPagesNumber(pagesNumber);
+        setNumberOfPages(pagesNumber);
         setCurrentPage(currentPage);
     }
 
@@ -106,7 +107,7 @@ public class Paginator extends PolymerTemplate<Paginator.PaginatorModel> impleme
      *
      * @param number number of pages
      */
-    public void setPagesNumber(int number) {
+    public void setNumberOfPages(int number) {
         if (number < 1) {
             throw new IllegalArgumentException("The number of pages has to be greeter than 0.");
         }
@@ -120,8 +121,8 @@ public class Paginator extends PolymerTemplate<Paginator.PaginatorModel> impleme
      * @param number
      * @param navigateFirstPage
      */
-    public void setPagesNumber(int number, boolean navigateFirstPage) {
-        setPagesNumber(number);
+    public void setNumberOfPages(int number, boolean navigateFirstPage) {
+        setNumberOfPages(number);
         if (navigateFirstPage) {
             setFirstPage();
         }
@@ -132,7 +133,7 @@ public class Paginator extends PolymerTemplate<Paginator.PaginatorModel> impleme
      *
      * @return pagesNumber number of pages
      */
-    public int getPagesNumber() {
+    public int getNumberOfPages() {
         return getModel().getTotalPages();
     }
 
@@ -170,7 +171,7 @@ public class Paginator extends PolymerTemplate<Paginator.PaginatorModel> impleme
      * Sets the last page as the current page.
      */
     public void setLastPage() {
-        setCurrentPage(getPagesNumber());
+        setCurrentPage(getNumberOfPages());
     }
 
 
@@ -206,7 +207,7 @@ public class Paginator extends PolymerTemplate<Paginator.PaginatorModel> impleme
      *
      * @return name last label
      */
-    public String getLatLabel() {
+    public String getLastLabel() {
         return getModel().getLastLabel();
     }
 
@@ -218,7 +219,7 @@ public class Paginator extends PolymerTemplate<Paginator.PaginatorModel> impleme
      * <code>false</code>, otherwise
      */
     public boolean isPageInBoundaries(int page) {
-        return (page > 0) && (page <= getPagesNumber());
+        return (page > 0) && (page <= getNumberOfPages());
     }
 
     /**

@@ -110,24 +110,6 @@
             <version>${project.version}</version>
         </dependency>
 
-        <!--<dependency>-->
-            <!--<groupId>com.vaadin</groupId>-->
-            <!--<artifactId>vaadin-button-flow</artifactId>-->
-            <!--<version>1.0.0</version>-->
-        <!--</dependency>-->
-
-
-        <!--<dependency>-->
-            <!--<groupId>com.vaadin</groupId>-->
-            <!--<artifactId>vaadin-grid-flow</artifactId>-->
-        <!--</dependency>-->
-
-        <!--<dependency>-->
-            <!--<groupId>com.vaadin</groupId>-->
-            <!--<artifactId>vaadin-icons-flow</artifactId>-->
-            <!--<version>1.0.0</version>-->
-        <!--</dependency>-->
-
         <dependency>
             <groupId>org.jfairy</groupId>
             <artifactId>jfairy</artifactId>

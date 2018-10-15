@@ -55,7 +55,7 @@ public class PaginatorView extends DemoView {
         int itemsPerPage = 10;
         int numberPages = numberItems / itemsPerPage;
 
-        gridPaginator.setPagesNumber(numberPages);
+        gridPaginator.setNumberOfPages(numberPages);
 
         gridPaginator.addChangeSelectedPageListener(event -> {
             loadItems(people,grid,event.getPage(),itemsPerPage);
