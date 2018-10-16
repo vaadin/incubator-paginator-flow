@@ -3,13 +3,11 @@ package com.vaadin.flow.component.incubator.vaadincom;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
-import java.util.Objects;
 import java.util.stream.Collectors;
 
 import org.jfairy.Fairy;
 import org.jfairy.producer.person.Person;
 
-import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.html.H3;
 import com.vaadin.flow.component.incubator.Paginator;
@@ -34,8 +32,6 @@ public class PaginatorView extends DemoView {
         h3.setText("Page: " + paginator.getCurrentPage());
 
         addCard("Basic Paginator", h3, paginator);
-
-        Button b;
 
         createExamplePaginatorGrid();
     }

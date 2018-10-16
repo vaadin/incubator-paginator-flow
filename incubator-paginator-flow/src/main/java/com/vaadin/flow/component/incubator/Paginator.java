@@ -43,6 +43,7 @@ public class Paginator extends PolymerTemplate<Paginator.PaginatorModel> impleme
      * Default constructor. Creates a Paginator.
      */
     public Paginator() {
+        //getElement().synchronizeProperty("totalPages","incubator-paginator-page-change");
         setNumberOfPages(1);
     }
 
@@ -118,8 +119,9 @@ public class Paginator extends PolymerTemplate<Paginator.PaginatorModel> impleme
      * Sets the number of pages of the paginator. It has to be greater than 0.
      * It reloads or not the current page to the first page.
      *
-     * @param number
-     * @param navigateFirstPage
+     * @param number number of pages
+     * @param navigateFirstPage <code>true</code> navigate to first page
+     * <code>false</code>, otherwise
      */
     public void setNumberOfPages(int number, boolean navigateFirstPage) {
         setNumberOfPages(number);
