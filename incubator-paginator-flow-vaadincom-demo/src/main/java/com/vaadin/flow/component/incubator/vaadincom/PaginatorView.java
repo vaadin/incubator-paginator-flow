@@ -37,7 +37,7 @@ import com.vaadin.flow.router.Route;
  *
  * @author Vaadin Ltd
  */
-@Route("vaadin-incubator-paginator")
+@Route("paginator")
 public class PaginatorView extends DemoView {
 
     private static final Fairy fairy = Fairy.create();
@@ -81,7 +81,7 @@ public class PaginatorView extends DemoView {
         });
 
         loadItems(people,grid,1,itemsPerPage);
-        addCard("Example Paginator & grid",grid,gridPaginator);
+        addCard("Example Paginator and Grid",grid,gridPaginator);
 
     }
 

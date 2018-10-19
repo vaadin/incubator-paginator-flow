@@ -43,7 +43,7 @@ public class Paginator extends PolymerTemplate<Paginator.PaginatorModel> impleme
      * Default constructor. Creates a Paginator.
      */
     public Paginator() {
-        //getElement().synchronizeProperty("totalPages","incubator-paginator-page-change");
+        getElement().synchronizeProperty("currentPage","incubator-paginator-page-change");
         setNumberOfPages(1);
     }
 
