@@ -1,5 +1,22 @@
 package com.vaadin.flow.component.incubator.vaadincom;
 
+/*
+ * #%L
+ * Vaadin IncubatorPaginator example for Vaadin 10
+ * %%
+ * Copyright (C) 2017 - 2018 Vaadin Ltd
+ * %%
+ * This program is available under Commercial Vaadin Add-On License 3.0
+ * (CVALv3).
+ *
+ * See the file license.html distributed with this software for more
+ * information about licensing.
+ *
+ * You should have received a copy of the CVALv3 along with this program.
+ * If not, see <http://vaadin.com/license/cval-3>.
+ * #L%
+ */
+
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
@@ -14,6 +31,12 @@ import com.vaadin.flow.component.incubator.Paginator;
 import com.vaadin.flow.demo.DemoView;
 import com.vaadin.flow.router.Route;
 
+
+/**
+ * Server-side component for the <code>incubator-paginator</code> element.
+ *
+ * @author Vaadin Ltd
+ */
 @Route("vaadin-incubator-paginator")
 public class PaginatorView extends DemoView {
 
