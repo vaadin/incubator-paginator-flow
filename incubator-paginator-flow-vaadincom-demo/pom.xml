@@ -12,7 +12,7 @@
     <artifactId>incubator-paginator-flow-vaadincom-demo</artifactId>
     <packaging>war</packaging>
 
-    <name>Incubator paginator VaadinCom Demo</name>
+    <name>Incubator Paginator VaadinCom Demo</name>
 
     <properties>
         <failOnMissingWebXml>false</failOnMissingWebXml>
