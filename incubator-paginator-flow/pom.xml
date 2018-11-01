@@ -64,7 +64,7 @@
                             <AdVaaPkg>com.vaadin.incubator.paginator</AdVaaPkg>
                             <!-- Implementation-Title and Implementation-Version
                                 come from the POM by default -->
-                            <Implementation-Title>Vaadin Crud</Implementation-Title>
+                            <Implementation-Title>Incubator Paginator</Implementation-Title>
                         </manifestEntries>
                     </archive>
                 </configuration>
