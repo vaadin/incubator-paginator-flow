@@ -1,3 +1,6 @@
+# Deprecated 
+This repository has been deprecated. Please find the latest code here: https://github.com/vaadin-component-factory/paginator
+
 # Incubator Paginator for Flow
 
 Incubator Paginator for Flow is a UI component add-on for Vaadin 10.
